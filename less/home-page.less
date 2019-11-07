@@ -1,7 +1,7 @@
 // Header styles
 .header {
   @media @mobile {
-    max-width: 400px;
+    max-width: 425px;
   } //end header media query
   img {
     margin-bottom: 3%;
@@ -28,6 +28,10 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+      } // end media query
     } // end text-content section
 
     .img-content {
@@ -36,7 +40,7 @@
 
       @media @mobile {
         width: 100%;
-      }
+      } // end media query
 
       img {
         border-radius: 10px;
@@ -48,6 +52,10 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @mobile {
+      flex-direction: column-reverse;
+    } // end media query
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
@@ -56,12 +64,20 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile {
+        width: 100%;
+      } // end media query
     } // end img-content for inverse content
   } // end inverse-content
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+
+    @media @mobile {
+      width: 100%;
+    } // end media query
 
     img {
       border-radius: 10px;
@@ -73,13 +89,27 @@
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
 
+    @media @mobile {
+      flex-direction: column;
+    } // end media query
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width: 75%;
+        margin-left: 12%;
+        margin-bottom: 15px;
+      }
     } // end destination div
   } // end excursion section
   .btn {
     .button();
 
+    @media @mobile {
+      width: 300px;
+      margin-left: 0;
+    }
   } // end button styles
 }// end home section
