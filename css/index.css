@@ -142,22 +142,44 @@ h3,
 h4,
 h5 {
   font-family: 'Indie Flower', cursive;
+  font-weight: 575;
 }
 h1 {
   font-size: 4rem;
+  font-weight: 575;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 3.8rem;
+  }
 }
 h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
 }
+@media (max-width: 500px) {
+  h2 {
+    font-size: 3.1rem;
+  }
+}
 h4 {
   font-size: 2.5rem;
   padding-bottom: 10px;
+}
+@media (max-width: 500px) {
+  h4 {
+    font-size: 2.4rem;
+  }
 }
 p {
   line-height: 1.5;
   font-size: 1.6rem;
   padding-bottom: 10px;
+}
+@media (max-width: 500px) {
+  p {
+    font-size: 1.5rem;
+  }
 }
 img {
   max-width: 100%;
@@ -234,7 +256,17 @@ nav a:hover {
   }
 }
 .header img {
+  animation-duration: 5s;
+  animation-name: slideIn;
   margin-bottom: 3%;
+}
+@keyframes slideIn {
+  from {
+    margin-right: 0%;
+  }
+  to {
+    margin-left: 100%;
+  }
 }
 .header p {
   border-bottom: 2px dashed #C0C0C0;
@@ -325,7 +357,7 @@ nav a:hover {
 }
 @media (max-width: 500px) {
   .home .content-pick .destination {
-    width: 75%;
+    width: 80%;
     margin-left: 12%;
     margin-bottom: 15px;
   }
@@ -348,7 +380,7 @@ nav a:hover {
 }
 @media (max-width: 500px) {
   .home .btn {
-    width: 300px;
+    width: 325px;
     margin-left: 0;
   }
 }

@@ -4,8 +4,18 @@
     max-width: 425px;
   } //end header media query
   img {
+    .animation(5s, slideIn);
     margin-bottom: 3%;
   } //end header img
+
+  @keyframes slideIn {
+    from {
+      margin-right: 0%;
+    }
+    to {
+      margin-left: 100%;
+    }
+  } // end keyframes styling
   
   p {
     .border();
@@ -98,7 +108,7 @@
       margin-bottom: 30px;
 
       @media @mobile {
-        width: 75%;
+        width: 80%;
         margin-left: 12%;
         margin-bottom: 15px;
       }
@@ -108,7 +118,7 @@
     .button();
 
     @media @mobile {
-      width: 300px;
+      width: 325px;
       margin-left: 0;
     }
   } // end button styles
