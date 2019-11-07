@@ -17,10 +17,10 @@
 .home {
 
   .content-section {
+    .flex(row, space-between);
     margin: 30px 0;
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    
 
     .text-content {
       width: 48%;
@@ -62,10 +62,9 @@
   } // end destination content
 
   .content-pick {
+    .flex(row, space-between);
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
 
     .destination {
       width: 30%;

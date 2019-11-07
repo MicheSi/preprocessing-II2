@@ -170,12 +170,13 @@ img {
 }
 nav {
   border-bottom: 2px dashed #C0C0C0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   max-width: 950px;
   width: 100%;
   margin: 0 auto;
   padding: 3% 4% 2%;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 @media (max-width: 500px) {
@@ -204,7 +205,7 @@ nav a {
   margin-right: 45px;
 }
 nav a:hover {
-  color: #17A2B8;
+  color: coral;
 }
 @media (max-width: 500px) {
   nav a {
@@ -236,10 +237,11 @@ nav a:hover {
   padding-bottom: 3%;
 }
 .home .content-section {
-  margin: 30px 0;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-between;
+  margin: 30px 0;
+  flex-wrap: wrap;
 }
 .home .content-section .text-content {
   width: 48%;
@@ -272,10 +274,11 @@ nav a:hover {
   border-radius: 10px;
 }
 .home .content-pick {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
-  display: flex;
-  justify-content: space-between;
 }
 .home .content-pick .destination {
   width: 30%;
@@ -293,4 +296,7 @@ nav a:hover {
   border: 2px groove rgba(105, 105, 105, 0.25);
   border-radius: 15px;
   color: white;
+}
+.home .btn:hover {
+  background-color: coral;
 }
