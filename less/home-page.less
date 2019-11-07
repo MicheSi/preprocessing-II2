@@ -1,3 +1,19 @@
+// Header styles
+.header {
+  @media @mobile {
+    max-width: 400px;
+  } //end header media query
+  img {
+    margin-bottom: 3%;
+  } //end header img
+  
+  p {
+    .border();
+    padding-bottom: 3%;
+  } //end header p
+} // end header section
+
+// Main content styles
 .home {
 
   .content-section {
@@ -6,12 +22,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
-    }
+    } // end text-content section
 
     .img-content {
       width: 48%;
@@ -19,9 +33,9 @@
 
       img {
         border-radius: 10px;
-      }
-    }
-  }
+      } // end img styles
+    } //end img-content section
+  } //end content-section
 
   .inverse-content {
     padding-bottom: 30px;
@@ -30,13 +44,13 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
-    }
+    } // end text-content for inverse section
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
-    }
-  }
+    } // end img-content for inverse content
+  } // end inverse-content
 
   .content-destination {
     width: 75%;
@@ -44,8 +58,8 @@
 
     img {
       border-radius: 10px;
-    }
-  }
+    } // end img for destination content
+  } // end destination content
 
   .content-pick {
     padding-top: 30px;
@@ -56,6 +70,10 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
-    }
-  }
-}// home
+    } // end destination div
+  } // end excursion section
+  .btn {
+    .button();
+
+  } // end button styles
+}// end home section
