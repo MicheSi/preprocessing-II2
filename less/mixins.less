@@ -1,1 +1,24 @@
 // Mixins in here
+
+.page-layout() {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.border() {
+    border-bottom: 2px dashed @navigation-border;
+}
+
+.button (@bg-color: @eastern-blue, @size: 200px, @text-color: white) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: @bg-color;
+    margin: 0 10px 20px;
+    width: @size;
+    height: 45px;
+    font-size: 1.8rem;
+    border-radius: 10px;
+    color: @txt-color;
+
+}
