@@ -1,1 +1,44 @@
 // Navigation Styles here
+
+nav {
+    .border();
+    .flex(row, space-between);
+    max-width: 950px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 3% 4% 2%;
+    align-items: center;
+
+    @media @mobile {
+        flex-wrap: wrap;
+        flex-direction: column;
+        max-width: 475px ;
+    } // end media query
+    
+    h1 {
+        font-size: 4.2rem;
+        margin-left: 20px;
+
+        @media @mobile {
+            margin: 0 auto;
+            text-align: center;
+            font-size: 3.2rem;
+            padding: 15px 0 20px;
+        } // end h1 media query
+    } // end h1
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.6rem;
+        margin-right: 45px;
+
+        &:hover{
+            color: @hover;
+        } // end hover styles
+
+        @media @mobile {
+            margin: 0 25px 0;
+        } // end media query
+    } // end a styles
+} // end nav styles

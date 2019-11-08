@@ -1,61 +1,125 @@
+// Header styles
+.header {
+  @media @mobile {
+    max-width: 425px;
+  } //end header media query
+  img {
+    .animation(5s, slideIn);
+    margin-bottom: 3%;
+  } //end header img
+
+  @keyframes slideIn {
+    from {
+      margin-right: 0%;
+    }
+    to {
+      margin-left: 100%;
+    }
+  } // end keyframes styling
+  
+  p {
+    .border();
+    padding-bottom: 3%;
+  } //end header p
+} // end header section
+
+// Main content styles
 .home {
 
   .content-section {
+    .flex(row, space-between);
     margin: 30px 0;
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-
-   
     
+    @media @mobile {
+      flex-direction: column;
+    } // end media query
+
     .text-content {
       width: 48%;
       padding-right: 1%;
-    }
+
+      @media @mobile {
+        width: 100%;
+      } // end media query
+    } // end text-content section
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile {
+        width: 100%;
+      } // end media query
+
       img {
         border-radius: 10px;
-      }
-    }
-  }
+      } // end img styles
+    } //end img-content section
+  } //end content-section
 
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @mobile {
+      flex-direction: column-reverse;
+    } // end media query
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
-    }
+    } // end text-content for inverse section
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
-    }
-  }
+
+      @media @mobile {
+        width: 100%;
+      } // end media query
+    } // end img-content for inverse content
+  } // end inverse-content
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile {
+      width: 100%;
+    } // end media query
+
     img {
       border-radius: 10px;
-    }
-  }
+    } // end img for destination content
+  } // end destination content
 
   .content-pick {
+    .flex(row, space-between);
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
+
+    @media @mobile {
+      flex-direction: column;
+    } // end media query
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width: 80%;
+        margin-left: 12%;
+        margin-bottom: 15px;
+      }
+    } // end destination div
+  } // end excursion section
+  .btn {
+    .button();
+
+    @media @mobile {
+      width: 325px;
+      margin-left: 0;
     }
-  }
-}// home
+  } // end button styles
+}// end home section
